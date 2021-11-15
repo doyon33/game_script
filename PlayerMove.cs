@@ -8,10 +8,12 @@ public class PlayerMove : MonoBehaviour
     public float moveSpeed = 10f;
     Rigidbody2D rigid;
     SpriteRenderer rend;
+    Animator animator;
     private void Start()
     {
         rigid = GetComponent<Rigidbody2D>();
         rend = GetComponentInChildren<SpriteRenderer>();
+        animator = GetComponentInChildren<Animator>();
     }
     void Update()
     {
@@ -24,11 +26,17 @@ public class PlayerMove : MonoBehaviour
         {
             transform.Translate(new Vector3(moveSpeed * Time.deltaTime, 0, 0));
             rend.flipX = false;
+            animator.SetBool("moving", true);
         }
-        if (Input.GetKey(KeyCode.LeftArrow))
+        else if (Input.GetKey(KeyCode.LeftArrow))
         {
             transform.Translate(new Vector3(-moveSpeed * Time.deltaTime, 0, 0));
             rend.flipX = true;
+            animator.SetBool("moving", true);
+        }
+        else
+        {
+            animator.SetBool("moving", false);
         }
     }
 }
