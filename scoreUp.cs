@@ -4,9 +4,22 @@ using UnityEngine;
 
 public class scoreUp : MonoBehaviour
 {
-    // Start is called before the first frame update
-    private void OnTriggerEnter2D(Collider2D other)
+    public Item item;
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        Score.score += 1;
+        if (collision.CompareTag("items"))
+        {
+            FieldItems fieldItems = collision.GetComponent<FieldItems>();
+            fieldItems.DestroyItem();
+            
+            if (fieldItems.item.itemName == "Donguri")
+            {
+                Score.score += 1;
+            }
+            else
+            {
+                Score.score += 3;
+            }
+        }
     }
 }
