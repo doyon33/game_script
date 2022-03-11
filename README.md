@@ -15,5 +15,5 @@ You can download the exe file through my google drive link below.<br>
 https://drive.google.com/drive/folders/16o9q76ivd6DxyEuZVrssbZ9svxd72WFq?usp=sharing
 
 ---
-Plus, this is not the compelete version so I will continue to update.<br>
+Plus, this is not a compelete version so I will continue to update.<br>
 추가로, 이는 완성된 게임이 아니며 앞으로도 업데이트 예정입니다.
