@@ -1,5 +1,6 @@
 ### 🐿 The Squirrel Game 🐿
-<img src="https://img.shields.io/badge/Unity-FFFFFF?style=flat-square&logo=Unity&logoColor=black"/> <img src="https://img.shields.io/badge/C sharp-239120?style=flat-square&logo=CSharp&logoColor=white"/>
+<img src="https://img.shields.io/badge/Unity-FFFFFF?style=flat-square&logo=Unity&logoColor=black"/> <img src="https://img.shields.io/badge/Aseprite-7D929E?style=flat-square&logo=Aseprite&logoColor=white"/> <img src="https://img.shields.io/badge/C sharp-239120?style=flat-square&logo=CSharp&logoColor=white"/>
+
 
 
 This is the game that I made in 2021.<br>
